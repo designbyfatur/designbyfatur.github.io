@@ -48,11 +48,19 @@
   // initial
   applyTheme(getInitialTheme());
 
+  function triggerToggleAnimation() {
+    toggleBtn.classList.add('is-animating');
+    setTimeout(() => {
+      toggleBtn.classList.remove('is-animating');
+    }, 360);
+  }
+
   // click toggle
   toggleBtn.addEventListener('click', () => {
     const current = root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
     const next = current === 'light' ? 'dark' : 'light';
     applyTheme(next);
+    triggerToggleAnimation();
   });
 
   // optional: toggle via keyboard "T"
@@ -61,6 +69,7 @@
       const current = root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
       const next = current === 'light' ? 'dark' : 'light';
       applyTheme(next);
+      triggerToggleAnimation();
     }
   });
 })();
