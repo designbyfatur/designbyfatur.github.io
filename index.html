@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>Huday Fathur Rahman – Branding, UI & Social Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Portfolio of Huday Fathur Rahman – designer focused on branding, UI/website, and social & campaign design."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-left">
+        <a href="#top" class="logo">
+          <span class="logo-text">
+            <span class="logo-name">Huday Fathur Rahman</span>
+            <span class="logo-role">Branding · UI · Social</span>
+          </span>
+        </a>
+      </div>
+
+      <nav class="header-nav">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Toggle light and dark mode"
+        >
+          <span class="theme-toggle-inner">
+            <span class="theme-toggle-icon"></span>
+          </span>
+        </button>
+        <button
+          class="btn btn-primary btn-compact"
+          type="button"
+          onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+        >
+          Let’s collaborate
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main id="top">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <!-- HERO LEFT -->
+        <div class="hero-left">
+          <div class="hero-tagline-row">
+            <span class="hero-chip">Available for remote collaboration</span>
+            <span class="hero-dot"></span>
+            <span class="hero-small">Jakarta · Graphic & UI Designer</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            Visual design
+            <span class="hero-break">for brands that</span>
+            <span class="hero-highlight">want to look clear & confident.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            I help businesses show up with simple, intentional design — from identity systems and landing pages to
+            social & campaign visuals.
+          </p>
+
+          <div class="hero-cta-row">
+            <button
+              class="btn btn-primary"
+              type="button"
+              onclick="document.getElementById('work').scrollIntoView({behavior:'smooth'})"
+            >
+              View selected work
+            </button>
+            <button
+              class="btn btn-ghost"
+              type="button"
+              onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})"
+            >
+              What I can do
+            </button>
+          </div>
+
+          <div class="hero-pill-row">
+            <div class="hero-pill">
+              <span class="hero-pill-label">Branding</span>
+              <span class="hero-pill-text">Logos, identity, and visual basics.</span>
+            </div>
+            <div class="hero-pill">
+              <span class="hero-pill-label">UI / Website</span>
+              <span class="hero-pill-text">Marketing pages that are easy to read.</span>
+            </div>
+            <div class="hero-pill">
+              <span class="hero-pill-label">Social & Campaign</span>
+              <span class="hero-pill-text">Consistent visuals for daily content.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO RIGHT -->
+        <div class="hero-right">
+          <div class="hero-photo-shell">
+            <div class="hero-photo-frame">
+              <!-- Ganti img/profile.jpg dengan foto profil kamu -->
+              <img
+                src="img/profile.png"
+                alt="Portrait of Huday Fathur Rahman"
+                class="hero-photo"
+              />
+            </div>
+            <div class="hero-floating-card">
+  <div class="floating-top">
+    <span class="floating-label">Graphic Designer</span>
+  </div>
+
+  <div class="floating-mainline">
+    <span class="floating-name-large">Huday Fathur Rahman</span>
+  </div>
+
+  <div class="floating-years-block">
+    <span class="floating-years">8+ years</span>
+    <span class="floating-years-text">Design experience</span>
+  </div>
+</div>
+
+          </div>
+
+        <div class="hero-links">
+            <a href="mailto:designbyfatur@gmail.com">Email</a>
+            <a href="https://wa.me/6281310229331" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://www.behance.net/designbyfatur" target="_blank" rel="noopener">Behance</a>
+            <a href="https://dribbble.com/Designbyfatur" target="_blank" rel="noopener">Dribbble</a>
+            <a href="https://linkedin.com/in/hudayfathur" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES / CAPABILITIES ========== -->
+    <section id="services" class="section capabilities" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header compact">
+          <div class="section-eyebrow">Services</div>
+          <h2 id="services-title" class="section-title">Core capabilities</h2>
+          <p class="section-subtitle">
+            Three focused areas where I bring the most value.
+          </p>
+        </div>
+
+        <div class="capabilities-track" aria-label="Service overview">
+          <!-- Branding -->
+          <article class="cap-card">
+            <header class="cap-header">
+              <span class="cap-label">Branding</span>
+              <h3 class="cap-title">Identity that feels simple and recognizable.</h3>
+            </header>
+            <ul class="cap-list">
+              <li>Logo & visual direction</li>
+              <li>Brand starter kit</li>
+              <li>Key marketing assets</li>
+            </ul>
+          </article>
+
+          <!-- UI / Website -->
+          <article class="cap-card">
+            <header class="cap-header">
+              <span class="cap-label">UI / Website</span>
+              <h3 class="cap-title">Pages that explain your offer clearly.</h3>
+            </header>
+            <ul class="cap-list">
+              <li>Landing page layout</li>
+              <li>Simple marketing sites</li>
+              <li>Design ready for dev/WordPress</li>
+            </ul>
+          </article>
+
+          <!-- Social & Campaign -->
+          <article class="cap-card">
+            <header class="cap-header">
+              <span class="cap-label">Social & Campaign</span>
+              <h3 class="cap-title">Content that stays consistent over time.</h3>
+            </header>
+            <ul class="cap-list">
+              <li>Feed & story templates</li>
+              <li>Campaign key visuals</li>
+              <li>Promo & content sets</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SELECTED WORK ========== -->
+    <section id="work" class="section work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-header compact">
+          <div class="section-eyebrow">Selected work</div>
+          <h2 id="work-title" class="section-title">A small snapshot of what I’ve delivered</h2>
+          <p class="section-subtitle">
+            Each project card shows the type of work and the outcome in one short line.
+          </p>
+        </div>
+
+        <div class="work-grid">
+          <!-- BRANDING - Pixeltech -->
+          <article class="work-card">
+            <header class="work-header">
+              <span class="work-tag">Branding</span>
+              <h3 class="work-title">Pixeltech Indonesia</h3>
+            </header>
+            <p class="work-line">
+              Built a bold, modular tech identity that works across social, decks, and digital campaigns.
+            </p>
+            <div class="work-meta">
+              <span>Logo & visual system</span>
+              <span>Marketing-ready assets</span>
+            </div>
+          </article>
+
+          <!-- BRANDING - Rumah Minimalis -->
+          <article class="work-card">
+            <header class="work-header">
+              <span class="work-tag">Branding</span>
+              <h3 class="work-title">Rumah Minimalis</h3>
+            </header>
+            <p class="work-line">
+              Reframed a home-design content brand into a calmer, more structured visual identity.
+            </p>
+            <div class="work-meta">
+              <span>Logo refresh</span>
+              <span>Content identity</span>
+            </div>
+          </article>
+
+          <!-- UI - Aryabima -->
+          <article class="work-card">
+            <header class="work-header">
+              <span class="work-tag">UI / Website</span>
+              <h3 class="work-title">Aryabima Trans City</h3>
+            </header>
+            <p class="work-line">
+              Designed a clear landing experience that makes their transport services and routes easy to understand.
+            </p>
+            <div class="work-meta">
+              <span>Homepage layout</span>
+              <span>Web structure</span>
+            </div>
+          </article>
+
+          <!-- UI - Landing page -->
+          <article class="work-card">
+            <header class="work-header">
+              <span class="work-tag">UI / Website</span>
+              <h3 class="work-title">Single-offer landing page</h3>
+            </header>
+            <p class="work-line">
+              Focused one-page layout for a single product, built for clarity and direct response.
+            </p>
+            <div class="work-meta">
+              <span>Conversion layout</span>
+              <span>Hero & sections</span>
+            </div>
+          </article>
+
+          <!-- SOCIAL - Tempong PNS -->
+          <article class="work-card">
+            <header class="work-header">
+              <span class="work-tag">Social & Campaign</span>
+              <h3 class="work-title">Tempong PNS</h3>
+            </header>
+            <p class="work-line">
+              Created a fun, youth-focused social grid and promo set for a food brand.
+            </p>
+            <div class="work-meta">
+              <span>Feed system</span>
+              <span>Promo templates</span>
+            </div>
+          </article>
+
+          <!-- SOCIAL - Webinar / Enscape Campaign -->
+          <article class="work-card">
+            <header class="work-header">
+              <span class="work-tag">Social & Campaign</span>
+              <h3 class="work-title">Webinar & software campaigns</h3>
+            </header>
+            <p class="work-line">
+              Designed clear campaign visuals that helped drive attention to webinars and product demos.
+            </p>
+            <div class="work-meta">
+              <span>Key visuals</span>
+              <span>Social materials</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="work-footer-row">
+          <button
+            type="button"
+            class="btn btn-ghost"
+            onclick="window.open('assets/Portfolio2024.pdf','_blank')"
+          >
+            View full PDF portfolio
+          </button>
+          <span class="work-note">
+            More project details are available on request or inside the PDF portfolio.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT & EXPERIENCE (COMPACT) ========== -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-block">
+          <div class="section-eyebrow">About</div>
+          <h2 id="about-title" class="section-title">A designer with a practical approach</h2>
+          <p class="about-text">
+            I’m <strong>Huday Fathur Rahman</strong>, a designer based in Jakarta. Since 2016 I’ve been working across
+            graphic design, UI, and social content — mostly helping teams turn rough ideas into visuals that are ready to publish.
+          </p>
+          <p class="about-text">
+            My work is less about decoration and more about structure, readability, and helping marketing feel more consistent.
+          </p>
+        </div>
+
+        <div class="experience-block" id="experience">
+          <div class="experience-list">
+            <div class="exp-item">
+              <div class="exp-main">
+                <span class="exp-role">Creative Designer & Creative Technologist</span>
+                <span class="exp-company">PT Piranti Nusantara Teknologi</span>
+              </div>
+              <span class="exp-meta">2020 – Present · Jakarta</span>
+            </div>
+
+            <div class="exp-item">
+              <div class="exp-main">
+                <span class="exp-role">Graphic Designer</span>
+                <span class="exp-company">PT Rumah Kantor Apartemen</span>
+              </div>
+              <span class="exp-meta">2016 – Present · Jakarta</span>
+            </div>
+
+            <div class="exp-item">
+              <div class="exp-main">
+                <span class="exp-role">Content Creator</span>
+                <span class="exp-company">Enjoy Kuis</span>
+              </div>
+              <span class="exp-meta">2018 – 2021 · Remote</span>
+            </div>
+          </div>
+
+          <div class="experience-note">
+            <span>Comfortable working with marketing, founders, and small teams who need ongoing design support.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-main">
+          <div class="section-eyebrow">Contact</div>
+          <h2 id="contact-title" class="section-title">Let’s talk about your next project</h2>
+          <p class="section-subtitle">
+            Share a short context about your brand, timeline, and what you need help with.
+          </p>
+
+          <div class="contact-list">
+            <div class="contact-row">
+                <span class="contact-label">Email</span>
+                <a href="mailto:designbyfatur@gmail.com" class="contact-link">designbyfatur@gmail.com</a>
+            </div>
+                <div class="contact-row">
+                    <span class="contact-label">WhatsApp</span>
+                        <a
+                            href="https://wa.me/6281310229331"
+                            target="_blank"
+                            rel="noopener"
+                            class="contact-link"
+                        >
+                            0813-1022-9331
+                        </a>
+                </div>
+
+            <div class="contact-row">
+              <span class="contact-label">LinkedIn</span>
+              <a
+                href="https://linkedin.com/in/hudayfathur"
+                target="_blank"
+                rel="noopener"
+                class="contact-link"
+              >
+                linkedin.com/in/hudayfathur
+              </a>
+            </div>
+             <div class="contact-row">
+              <span class="contact-label">Instagram</span>
+              <a
+                href="https://instagram/designbyfatur"
+                target="_blank"
+                rel="noopener"
+                class="contact-link"
+              >
+                @designbyfatur
+              </a>
+            </div>
+          </div>
+
+         
+
+          <button
+  type="button"
+  class="btn btn-primary contact-btn"
+  onclick="window.location.href='mailto:designbyfatur@gmail.com'"
+>
+  Send an email
+</button>
+
+        </div>
+
+        <div class="contact-side">
+          <p class="contact-side-title">Best fit if you need:</p>
+          <ul class="contact-side-list">
+            <li>Branding and logo foundations</li>
+            <li>Landing pages & simple marketing sites</li>
+            <li>Social content systems and campaign visuals</li>
+          </ul>
+          <p class="contact-side-note">
+            I can also tailor a mini case-study deck based on the type of work you’re looking for.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Huday Fathur Rahman.</span>
+      <span>Branding, UI, and social design with a calm, practical approach.</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
