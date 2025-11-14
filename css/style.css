@@ -230,6 +230,10 @@ html[data-theme="light"] .logo-mark {
    THEME TOGGLE
    =========================== */
 
+/* ===========================
+   THEME TOGGLE
+   =========================== */
+
 .theme-toggle {
   border: none;
   padding: 0;
@@ -238,8 +242,8 @@ html[data-theme="light"] .logo-mark {
 }
 
 .theme-toggle-inner {
-  width: 44px;
-  height: 24px;
+  width: 46px;
+  height: 26px;
   border-radius: 999px;
   border: 1px solid var(--border-subtle);
   background: linear-gradient(to right, var(--bg-soft), var(--bg-card));
@@ -254,27 +258,69 @@ html[data-theme="light"] .logo-mark {
 }
 
 .theme-toggle-icon {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition:
     transform var(--transition-med),
     box-shadow var(--transition-med),
     background var(--transition-med);
+  position: relative;
 }
 
-/* Dark → moon-ish kanan */
+/* ikon di dalam toggle */
+.theme-toggle-icon::before {
+  content: "☀";
+  font-size: 0.9rem;
+  line-height: 1;
+  transition:
+    transform 0.25s ease-out,
+    opacity 0.2s ease-out,
+    color 0.2s ease-out;
+}
+
+/* Dark → bulan di kanan */
 html[data-theme="dark"] .theme-toggle-icon {
   transform: translateX(18px);
   background: radial-gradient(circle at 30% 0%, #e5e7eb, #1f2937 70%);
   box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.7);
 }
 
-/* Light → sun-ish kiri */
+html[data-theme="dark"] .theme-toggle-icon::before {
+  content: "🌙";
+  color: #e5e7eb;
+}
+
+/* Light → matahari di kiri */
 html[data-theme="light"] .theme-toggle-icon {
   transform: translateX(0);
   background: radial-gradient(circle at 30% 0%, #f97316, #fde68a 70%);
   box-shadow: 0 0 0 3px rgba(254, 243, 199, 0.9);
+}
+
+html[data-theme="light"] .theme-toggle-icon::before {
+  content: "☀";
+  color: #f97316;
+}
+
+/* efek "bounce" kecil saat toggle */
+.theme-toggle.is-animating .theme-toggle-icon::before {
+  animation: toggle-pulse 0.35s ease-out;
+}
+
+@keyframes toggle-pulse {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* ===========================
